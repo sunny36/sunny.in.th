@@ -17,13 +17,20 @@
   font-family: "droid sans bold";
   src: url("/fonts/DroidSans-Bold.ttf");
 }
+@font-face
+{
+  font-family: "LeagueGothicRegular";
+  src: url("/fonts/League_Gothic.eot");
+}
+
 body
 {
   color:#333;
-  font-family: helvetica, arial, sans-serif;
-  font-size:87.5%;   /* 16px * 0.875 = 14px */
+  font-family: Calibri, Tahoma, Verdana, sans-serif;         
+  font-size:120%;   /* 16px * 0.875 = 14px */
   line-height: 137.5%; /* 16px * 1.375  = 22px */
 }
+
 a
 {
   text-decoration:none;
@@ -44,19 +51,20 @@ h1, h2, h3, h4, h5, h6
 {
   color: #000;
 }
+
 h1, h2, h3
 {
-  font-family: "droid sans", helvetica, arial, sans-serif;
+  font-family: 'LeagueGothicRegular', 'Calibri', Verdana, sans-serif;
 }
 
 h4, h5, h6
 {
-  font-family: "droid sans bold", helvetica, arial, sans-serif;
+  font-family: 'LeagueGothicRegular', 'Calibri', Verdana, sans-serif;
 }
 
 h1
 {
-  font-size: 150.0%;
+  font-size: 180.0%;
 }
 h2
 {
@@ -76,7 +84,7 @@ h5, h6{
 
 pre,code
 {
-    font-family: "inconsolata", monospace;
+    font-family: 'andale mono', 'lucida console', monospace;
     /* font-size: 1.142em; */
 }
 
@@ -94,7 +102,7 @@ header, footer
 
 
 header h1{
-  font-size:1.142em;
+  font-size:3.142em;
 }
 
 header h1 a, header h1 a:visited
@@ -112,4 +120,5 @@ footer{
 ul.posts
 {
   list-style-type:none;
+  font-size:  120.5%;
 }

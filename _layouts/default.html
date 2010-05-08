@@ -10,6 +10,10 @@
   <link rel=stylesheet type=text/css media="screen, projection" charset=utf-8 href=/css/screen.css />
   <link rel=stylesheet type=text/css media="screen, projection" charset=utf-8 href=/css/pygments.css />
   <link rel=alternate type="application/rss+xml" title="RSS" href="/atom.xml" /> 
+<script src="http://www.google.com/jsapi"></script>
+<script>
+  google.load("jquery", "1.4.2");
+ </script>
 </head>
 <body>
 <div id=wrap class=container_12>
@@ -18,8 +22,7 @@
   <h1><a href="{{site.url}}">{{site.title}}</a></h1>
 {% endif %}
 </header>
-<div class=clear></div>
-<section class="grid_8 alpha omega">
+<section class="grid_12 alpha omega">
 {{ content }}
 </section>
 <div class=clear></div>
@@ -30,12 +33,12 @@
      {% if site.email %}{{site.email}} {% endif %}<br/>
   </p> 
 </div> 
-<div class="grid_4">
+<div class="grid_6">
   <p> 
-    <a href="http://twitter.com/">twitter.com</a><br /> 
+    <a href="http://twitter.com/sunny36">twitter.com/sunny36</a><br /> 
   </p> 
 </div> 
-<div class="grid_4 omega"> 
+<div class="grid_2 omega"> 
   <a href="{{site.url}}/atom.xml" class="noul"> 
     <img src="/img/rss.png" alt="Subscribe to RSS Feed" /> 
   </a> 
@@ -51,5 +54,20 @@ pageTracker._trackPageview();
 </footer>
 <div class="clear"></div>
 </div><!-- .container_12 -->
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+	var links = document.getElementsByTagName('a');
+	var query = '?';
+	for(var i = 0; i < links.length; i++) {
+	if(links[i].href.indexOf('#disqus_thread') >= 0) {
+		query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+	}
+	}
+	document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/sunny36/get_num_replies.js' + query + '"></' + 'script>');
+})();
+//]]>
+</script>
 </body>
 </html>
